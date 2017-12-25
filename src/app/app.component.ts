@@ -12,20 +12,37 @@ import * as firebase from 'firebase/app';
 export class AppComponent {
   title = 'app';
 
-  constructor(public afAuth: AngularFireAuth, private router: Router) {
-  }
+  constructor(public afAuth: AngularFireAuth, private router: Router) {}
   login() {
-    this.afAuth.auth.signInWithPopup(new firebase.auth.GoogleAuthProvider())
-    .then((resp) => {
-      if (resp.user.email !== '') {
-        this.router.navigate(['/admin/dashboard']);
-      }
-    })
-    .catch((error) => {
-      console.log(error);
-      this.router.navigate(['/login']);
-    });
+    this.afAuth.auth
+      .signInWithPopup(new firebase.auth.GoogleAuthProvider())
+      .then(resp => {
+        if (resp.user.email !== '') {
+          this.router.navigate(['/admin/dashboard']);
+        }
+      })
+      .catch(error => {
+        console.log(error);
+        alert(error.message);
+        this.router.navigate(['/login']);
+      });
   }
+
+  loginByFacebook() {
+    this.afAuth.auth
+      .signInWithPopup(new firebase.auth.FacebookAuthProvider())
+      .then(resp => {
+        if (resp.user.email !== '') {
+          this.router.navigate(['/admin/dashboard']);
+        }
+      })
+      .catch(error => {
+        console.log(error);
+        alert(error.message);
+        this.router.navigate(['/login']);
+      });
+  }
+
   logout() {
     this.router.navigate(['/login']);
     this.afAuth.auth.signOut();
