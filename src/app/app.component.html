@@ -1,5 +1,6 @@
 <div *ngIf="afAuth.authState | async; let user; else showLogin">
-  <h1>Hello {{ user.displayName }}!</h1>
+  <h1 style="color:blueviolet;"><router-outlet></router-outlet></h1>
+  <h3>Hello {{ user.displayName }}!</h3>
   <button (click)="logout()">Logout</button>
 </div>
 <ng-template #showLogin>
