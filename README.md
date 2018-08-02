@@ -1,8 +1,8 @@
-#Login by Google and Facebook with angularfire2 Build to angular 5
+## Login by Google and Facebook with angularfire2 Build to angular 5
 
 ![cpac](./src/assets/images/angularfire2-img.png)
 
-##Demo
+
 [CLick to Demo]()
 
 ## Getting Started
