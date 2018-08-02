@@ -1,14 +1,18 @@
 <div *ngIf="afAuth.authState | async; let user; else showLogin">
-  <h1 style="color:blueviolet;">
-    <router-outlet></router-outlet>
-  </h1>
-  <h3>Hello {{ user.displayName }}!</h3>
-  <button (click)="logout()">Logout</button>
+    <h1 style="color:blueviolet;">
+        <router-outlet></router-outlet>
+    </h1>
+    <h3>Hello {{ user.displayName }}!</h3>
+    <button (click)="logout()">Logout</button>
 </div>
 <ng-template #showLogin>
-  <p>Please login.</p>
-  <button (click)="login()">Login with Google</button>
-  <br>
-  <br>
-  <button (click)="loginByFacebook()">Login with Facebook</button>
+    <h1>Please login.</h1>
+    <a (click)="login()" style="cursor: pointer;">
+        <img src="assets/images/login-by-gmail.png" alt="Login with Google" width="300" height="50">
+    </a>
+    <br>
+    <br>
+    <a (click)="loginByFacebook()" style="cursor: pointer;">
+        <img src="assets/images/login-by-facebook.png" alt="Login with Facebook" width="300" height="50">
+    </a>
 </ng-template>

@@ -1,27 +1,50 @@
-# Angular5 login by gmail and facebook with angularfire2
+#Login by Google and Facebook with angularfire2 Build to angular 5
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.2.
+![cpac](./src/assets/images/angularfire2-img.png)
 
-## Development server
+##Demo
+[CLick to Demo]()
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Getting Started
 
-## Code scaffolding
+Clone project and running test in local  
+```
+http://localhost:4200
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Prerequisites
 
-## Build
+You need to install the software.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+- Angular version 5 or greater
 
-## Running unit tests
+Install global angular cli
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```
+npm install -g @angular/cli@latest
 
-## Running end-to-end tests
+// If error install
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+npm i -g npm
+npm cache verify
+npm cache clean --force
 
-## Further help
+// Already again
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+npm install -g @angular/cli@latest
+
+```
+
+## Running 
+
+```
+http://localhost:4200
+```
+
+## Authors
+
+* **Panusitt Khuenkham** - *Developer*
+
+
+## License
+Open source licenses
