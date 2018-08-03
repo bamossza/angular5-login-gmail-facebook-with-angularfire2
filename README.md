@@ -7,7 +7,7 @@
 
 ## Getting Started
 
-Clone project and running test in local  
+Clone project and running test in local ^^
 ```
 http://localhost:4200
 ```
