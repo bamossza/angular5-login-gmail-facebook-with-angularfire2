@@ -1,6 +1,6 @@
 import {Router} from '@angular/router';
 import {Component} from '@angular/core';
-import * as firebase from 'firebase/app';
+import * as firebase from 'firebase';
 import {AngularFireAuth} from 'angularfire2/auth';
 import 'rxjs/add/operator/filter';
 import 'rxjs/add/operator/first';
