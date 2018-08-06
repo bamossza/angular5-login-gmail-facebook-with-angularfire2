@@ -1,4 +1,4 @@
-## Login by Google and Facebook with angularfire2 Build to angular 5
+## Login by Google and Facebook with angularfire2 Build to angular 5 [![Build Status](https://travis-ci.com/bamossza/angular5-login-gmail-facebook-with-angularfire2.svg?branch=master)](https://travis-ci.com/bamossza/angular5-login-gmail-facebook-with-angularfire2)
 
 ![cpac](./src/assets/images/angularfire2-img.png)
 

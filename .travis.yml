@@ -1,0 +1,23 @@
+sudo: required
+addons:
+  chrome: stable
+
+language: node_js
+node_js:
+- "10"
+
+branches:
+  only:
+  - master
+
+before_script:
+- npm install -g @angular/cli
+
+script:
+- ng build --prod
+#- ng test
+
+#deploy:
+#  provider: heroku
+#  api_key:
+#    secure: "YOUR ENCRYPTED API KEY"
